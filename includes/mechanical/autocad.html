@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course: AutoCAD</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/courses.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../preloader/css/loader.css">
+    <script src="../../preloader/js/loader.js"></script>
+</head>
+<body>
+    <div class="preloader-overlay" id="preloader">
+        <div class="cube-wrapper">
+            <div class="cube-folding">
+            <span class="leaf1"></span>
+            <span class="leaf2"></span>
+            <span class="leaf3"></span>
+            <span class="leaf4"></span>
+            </div>
+            <span class="loading" data-name="Loading">Loading</span>
+        </div>
+    </div>  
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top">
+        <a class="navbar-brand" href="#"><img class="img-fluid" src="../../images/engigyan.png" alt="" id="logo"> EngiGyan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.php">
+                        <div class="link-nav">HOME</div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                        <div class="link-nav">CATEGORIES <span style="font-size: 12px !important;"><i class="fa fa-chevron-down" aria-hidden="true"></i></span> </div>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="menu">
+                        <li id="menu-li"><a class="dropdown-item dropdown-toggle" href="#" id="menu-content">Computer Science</a>
+                            <ul class="dropdown-menu" id="sub-menu">
+                                <li><a class="dropdown-item" href="../cs/cpp.html">C++</a></li>
+                                <li><a class="dropdown-item" href="../cs/java.html">JAVA</a></li>
+                                <li><a class="dropdown-item" href="../cs/mysql.html">MySQL</a></li>
+                                <li><a class="dropdown-item" href="../cs/python.html">Python</a></li>
+                                <li><a class="dropdown-item" href="../cs/linux.html">LINUX</a></li>
+                                <li><a class="dropdown-item" href="../cs/ai.html">Artificial Intelligence</a></li>
+                                <li><a class="dropdown-item" href="../cs/bigdata.html">Big Data</a></li>
+                                <li><a class="dropdown-item" href="#">Web Developement</a></li>
+                                <li><a class="dropdown-item" href="#">App Developement</a></li>
+                                <li><a class="dropdown-item" href="#">Machine Learning</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-li"><a class="dropdown-item dropdown-toggle" href="#" id="menu-content">Mechanical Engineering</a>
+                            <ul class="dropdown-menu" id="sub-menu">
+                                <li><a class="dropdown-item" href="solidworks.html">SolidWorks</a></li>
+                                <li><a class="dropdown-item" href="catia.html">CATIA</a></li>
+                                <li><a class="dropdown-item" href="autocad.html">AutoCAD</a></li>
+                                <li><a class="dropdown-item" href="ansys.html">ANSYS</a></li>
+                                <li><a class="dropdown-item" href="cdf.html">CDF Analysis</a></li>
+                                <li><a class="dropdown-item" href="hyperworks.html">Hyper Works</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-li"><a class="dropdown-item dropdown-toggle" href="#" id="menu-content">Civil Engineering</a>
+                            <ul class="dropdown-menu" id="sub-menu">
+                                <li><a class="dropdown-item" href="#">AutoCAD</a></li>
+                                <li><a class="dropdown-item" href="#">AutoDesk</a></li>
+                                <li><a class="dropdown-item" href="#">3D MAX</a></li>
+                                <li><a class="dropdown-item" href="#">Running Suits</a></li>
+                                <li><a class="dropdown-item" href="#">AutoDesk</a></li>
+                                <li><a class="dropdown-item" href="#">Sketch Up</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-li"><a class="dropdown-item dropdown-toggle" href="#" id="menu-content">Electrical Engineering</a>
+                            <ul class="dropdown-menu" id="sub-menu">
+                                <li><a class="dropdown-item" href="#">MATLAB</a></li>
+                                <li><a class="dropdown-item" href="#">IOT</a></li>
+                                <li><a class="dropdown-item" href="#">AutoCAD</a></li>
+                                <li><a class="dropdown-item" href="#">PLC</a></li>
+                                <li><a class="dropdown-item" href="#">VLSI</a></li>
+                                <li><a class="dropdown-item" href="#">Python</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="link-nav">SERVICES</div>
+                    </a>
+                </li>   
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">
+                        <div class="link-nav">ABOUT US</div>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" id="spc">
+                    <a class="nav-link" href="#">
+                        <div class="link-nav">Auto E PREP</div>
+                    </a>
+                </li>
+                <li class="nav-item" id="spc1">
+                    <a class="nav-link" href="#">
+                        <div class="link-nav" data-toggle="modal" data-target="#login">Log In</div>
+                    </a>
+                </li>
+                <li class="nav-item" id="spc2">
+                    <a class="nav-link" href="#">
+                        <div class="link-nav" data-toggle="modal" data-target="#register">Register</div>
+                    </a>
+                </li>
+            </ul>
+        </div>  
+    </nav>
+    <!-- modal box for login-->
+    <div id="login" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="text-align: center !important;">
+                    <center><h3 class="modal-title">Log In to Your Account</h3></center>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email" placeholder="ex:abc@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Password">
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="btn btn-success">Login</button>
+                            </div>
+                            <div class="col">
+                                or <a href="#">Forgot Password</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        Don't have an Account? &nbsp; <a href="" data-dismiss="modal" data-toggle="modal" data-target="#register">Sign Up</a>
+                    </div>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal box for registeration-->
+    <div id="register" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="text-align: center !important;">
+                    <center><h3 class="modal-title">Create Account</h3></center>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="name">Full Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name Here">
+                            </div>
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email" placeholder="ex:abc@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Repeat Password:</label>
+                            <input type="password" class="form-control" id="pwd2" placeholder="Repeat Password">
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="btn btn-success">Register</button>
+                            </div>
+                        </div>
+                        <div class="row" id="policy_l">
+                                By signing up , you agree to our <a href="http://"> Terms Of Use </a> and <a href="http://"> Privacy Policy.</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        Already have an account? <a href="" data-dismiss="modal" data-toggle="modal" data-target="#login">Sign In</a>
+                    </div>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="jumbotron" id="head">
+        <div class="row" style="margin-left: 0px !important">
+            <div class="col" id="c_img"><img src="../../images/autocad.png" alt="SolodWorks" class="img-fluid" id="course_img" style="margin-top: 20px !important;"></div>
+            <div class="col" id="c_cont">
+                <div class="row"><h1>AutoCAD: Complete Course</h1></div>
+                <div class="row"><h5>Opportunity to use a <b>CAD</b> application is a craft  that can serve you well in the future. In fact, your Future that AutoCAD will correspond.</h5></div>
+                <div class="row" id="ratings">Ratings: &nbsp;<span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row" id="price"><small><strike>Rs. 3500</strike></small> Rs. 2000</div>
+                <div class="row" id="buttons">
+                    <button class="btn btn-primary">Pay Now</button> &nbsp;
+                    <button class="btn btn-outline-danger">Start Free Demo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container" id="what-will-learn">
+            <h2>What will you learn?</h2>
+            <ul style="list-style-type:none">
+                <li id="what-will-learn-content">
+                    <span id="tick"><i class="fa fa-check"></i> </span> Different types of software’s used in different fields and Introduction Auto CAD & its GUI.
+                </li>
+                <li id="what-will-learn-content">
+                    <span id="tick"><i class="fa fa-check"></i> </span> Templates and different types of templates.
+                </li>
+                <li id="what-will-learn-content">
+                    <span id="tick"><i class="fa fa-check"></i> </span> Relative Rectangular coordinate system.
+                </li>
+                <li id="what-will-learn-content">
+                    <span id="tick"><i class="fa fa-check"></i> </span> Commands for Circle, Ellipse, arc etc.
+                </li>
+                <li id="what-will-learn-content">
+                    <span id="tick"><i class="fa fa-check"></i> </span> Modify Commands:
+                    <ul id="modify-com">
+                        <li id="modify-com-li">
+                            Move, Copy, Mirror, Break, Join, and Break at point, Scale, Stretch
+                        </li>
+                        <li id="modify-com-li">
+                            Rotate, Solid, Donut, Offset, Trim, Extend
+                        </li>
+                        <div id="accordion">
+                            <div class="collap">
+                                <div id="toggle-collapse">
+                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne" onclick="myfun()">
+                                        Read More...
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                    <li id="modify-com-li">
+                                        Array, Chamfer, Fillet, Drawing Units, Drawing Limits
+                                    </li>
+                                    <li id="modify-com-li">
+                                        Hatch, Hatch Edit, View, Spline, Revision Cloud and Area Day
+                                    </li>
+                                    <li id="modify-com-li">
+                                        Polyline, Polyline Editing, Zoom, Pan, Inquiry
+                                    </li>
+                                    <li id="modify-com-li">
+                                        Dimension- Quick, Linear, Aligned, Angular, Radius, Diameter, Centre Point, Arc Length
+                                    </li>
+                                    <li id="modify-com-li">
+                                        Tolerance, Ordinate, Dimension Editing- Home, New, Rotate/Angle, Oblique, Left, Centre, Right, Dimension Style
+                                    </li>
+                                    <li id="modify-com-li">
+                                        Jogged, Leader, Baseline, Continue, Reassociate Dimensions, Associative Dimensions
+                                    </li>
+                                    <li id="modify-com-li">
+                                        Ray, Construction line, Divide, measure, Point, Region, Group, Filter, Ole-object
+                                    </li>
+                                    <li id="modify-com-li">
+                                        Attribute, Attribute Editing, Insert Block with Attribute, Raster Image, External References, Attach Drawings, Detach Drawings
+                                    </li>
+                                    <li id="modify-com-li">
+                                        Plotter, Page Setup Manager, Plotter Manager, Plot style Manager, Layout, Model space, Paper space, Create Layout, Multiple viewport, Delete Layout
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Includes</h3>
+            <ul style="list-style-type: none; color: #565656;">
+                <li id="includes-content">
+                    <span id="includes-gliphs"><i class="fa fa-terminal"></i></span> Hands-On Practice and a Project
+                </li>
+                <li id="includes-content">
+                    <span id="includes-gliphs"><i class="fa fa-file-text-o"></i></span> Articles and Notes
+                </li>
+                <li id="includes-content">
+                    <span id="includes-gliphs"><i class="fa fa-book"></i></span> Each course is like an interactive textbook, featuring pre-recorded videos, quizzes and projects.
+                </li>
+                <li id="includes-content">
+                    <span id="includes-gliphs"><i class="fa fa-certificate"></i></span> Certificate on Course Completion
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid" id="requirements">
+        <div class="container">
+            <h2>Requirements</h2>
+            <ul id="requirements-ul">
+                <li>
+                    A computer with Windows O.S, the software and tools needed (Specific apps will be named in initial videos).
+                </li>
+                <li>
+                    A strong work ethic, willingness to learn, dedication and plenty of excitement to learn something new.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h2 style="text-align: center; padding: 20px;">Featured Courses</h2>
+        <div class="container" style="padding: 20px !important;">
+            <div class="row">
+                <div class="col">
+                    <div class="card" id="fc">
+                        <img class="card-img-top img-fluid" src="../../images/cdf.png" alt="Card image" id="c-img">
+                        <div class="card-body" id="cbody1">
+                            <h4 class="card-title">CDF Analysis</h4>
+                            <p class="card-text"<small><strike>Rs. 2800</strike></small> Rs. 2500</p>
+                            <div style="padding: 3px;"><a href="cdf.html" class="card-link btn btn-primary">View More</a></div>
+                            <div style="padding: 3px;"><a href="#" class="card-link btn btn-primary">Join Course</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="fc">
+                        <img class="card-img-top img-fluid" src="../../images/catia.png" alt="Card image" id="c-img">
+                        <div class="card-body" id="cbody1">
+                            <h4 class="card-title">CATIA</h4>
+                            <p class="card-text"><small><strike>Rs. 3000</strike></small> Rs. 2500</p>
+                            <div style="padding: 3px;"><a href="catia.html" class="card-link btn btn-primary">View More</a></div>
+                            <div style="padding: 3px;"><a href="#" class="card-link btn btn-primary">Join Course</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="fc">
+                        <img class="card-img-top img-fluid" src="../../images/autocad.png" alt="Card image" id="c-img">
+                        <div class="card-body" id="cbody1">
+                            <h4 class="card-title">AutoCAD</h4>
+                            <p class="card-text"><small><strike>Rs. 3500</strike></small> Rs. 2000</p>
+                            <div style="padding: 3px;"><a href="autocad.html" class="card-link btn btn-primary">View More</a></div>
+                            <div style="padding: 3px;"><a href="#" class="card-link btn btn-primary">Join Course</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="fc">
+                        <img class="card-img-top img-fluid" src="../../images/ansys.png" alt="Card image" id="c-img">
+                        <div class="card-body" id="cbody1">
+                            <h4 class="card-title">ANSYS</h4>
+                            <p class="card-text"><small><strike>Rs. 2500</strike></small> Rs. 1800</p>
+                            <div style="padding: 3px;"><a href="ansys.html" class="card-link btn btn-primary">View More</a></div>
+                            <div style="padding: 3px;"><a href="#" class="card-link btn btn-primary">Join Course</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="footer">
+        <div class="">
+            <div class="">
+                <h2>EngiGyan</h2>
+                <p>EngiGyan is leading best Live online Software training in India.</p>
+            </div>
+            <div class="">
+                Follow <br>
+                <a href="https://www.facebook.com/engigyan"><i class="fa fa-facebook-square" style="font-size:24px; color: whitesmoke"></i></a> &nbsp;
+                <a href="https://www.linkedin.com/in/engigyan/"> <i class="fa fa-linkedin" style="font-size:24px; color: whitesmoke"></i> </a> &nbsp;
+                <a href="http://"> <i class="fa fa-youtube-play" style="font-size:24px; color: whitesmoke"></i> </a>
+            </div>
+        </div>
+        <div class="">
+            <div class="">
+                <h2>Contact Us</h2>
+                <p>Cabin F-2, SMVDU-TBIC <br> Katra, J&K, (182320)</p>
+            </div>
+            <div class="">
+                mail id: <a href="mailto:info@engigyan.com" id="foo">info@engigyan.com </a> <br>
+                Contact Us: (+919596098157, +919149604575)
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../js/dropdown.js"></script>
+<script>
+    function myfun(){
+        document.getElementById("toggle-collapse").style.display="none";
+    }
+</script>
+</html>

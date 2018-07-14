@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Source+Sans+Pro|Roboto+Condensed|Titillium+Web:400,700');
+
+body{
+   margin: 0 auto;
+   overflow-x:hidden;
+}
+
+
+.footerLink:link, .footerLink:visited{
+     color:#576471;
+     margin-right:5px;
+     margin-left:5px;
+     text-decoration:none;
+}
+
+.footerLink:hover, .footerLink:active{
+     color:#576471;  
+  
+     text-decoration:underline;
+}
+
+.rightOptions{
+ 
+   font-size:14pt;
+   padding:8px;
+}
+
+input, textarea{
+   outline:0;
+}
+
+.footerHeading, .contactUsHeading{
+   font-family: 'Titillium Web', sans-serif;
+   font-size:20px;
+   font-weight:bold;
+   color:#f66629;
+   text-transform:uppercase;
+}
+
+.w3-text{
+   color:#576471;
+}
+
+.footer{
+   margin-top:-30px;
+   padding-top:50px;
+   background:#fff;
+
+}
+
+.list{
+   padding:10px;
+   margin-top:20px;
+}
+
+.list ul li{
+   font-family:open sans;
+   line-height:2;
+   letter-spacing:1.5px;
+   font-size:17px;
+}
+
+.copyRightNote{
+     font-family: century gothic;
+    font-size: 12px;
+    padding: 10px;
+    background: #eee;
+    color: #a8a7a7;
+    text-align:center;
+       border-top:1px solid #e6e6e6;
+}
+
+
+   
+.socialContainers img{
+   display:inline-block;
+   transition: all 0.3s ease-in-out;
+}
+
+.socialContainers img:hover{
+   transform:scale(1.1);
+}
+
+.footer .list li{
+   list-style:none;
+   margin-left:-10px;
+   word-wrap:break-word;
+   font-family:open sans;
+   line-height:2;
+  
+   font-size:15px;   
+}
+
+.footerAligned div div{
+   margin-top:20px;
+}
