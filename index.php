@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Engigyan.com|Live Training</title>
     <link rel="stylesheet" href="css/style.css">
@@ -1036,13 +1037,13 @@
     <div class="container-fluid" id="review">
         <div class="highlights"><h1 style="text-align: center !important;">Student's Feedback</h1><br></div>
         <div class="container">
-            <div id="demo" class="carousel slide" data-ride="carousel">
+            <div id="demox" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demox" data-slide-to="0" class="active"></li>
+                    <li data-target="#demox" data-slide-to="1"></li>
+                    <li data-target="#demox" data-slide-to="2"></li>
+                    <li data-target="#demox" data-slide-to="3"></li>
                 </ul>
                 <!-- The slideshow -->
                 <div class="carousel-inner">

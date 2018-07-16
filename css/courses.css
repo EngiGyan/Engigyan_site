@@ -58,6 +58,7 @@
 #what-will-learn{
     border: 1px solid lightgray;
     padding: 30px !important;
+    background: white;
     border-radius: 4px;
     position:relative; 
     -webkit-animation: fmove 2s; /* Safari 4.0 - 8.0 */
@@ -132,7 +133,17 @@
     justify-content: center !important;
     align-items: center !important;
 }
-
+.certificate{
+    padding: 20px;
+    border: 1px solid grey !important; 
+    border-radius: 3px !important;
+}
+#certificate-img{
+    height: 300px;
+    width: auto;
+    padding-bottom: 10px;
+    align-self: center;
+}
 .v_img{
     margin-right: 5px;
     width: 30%;
